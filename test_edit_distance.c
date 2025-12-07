@@ -79,7 +79,7 @@ void test_tile_boundary() {
     assert(dist == 1);
 }
 
-int main() {
+int run_tests() {
     printf("Testing edit distance\n\n");
     
     test_empty_strings();

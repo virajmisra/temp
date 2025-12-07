@@ -6,6 +6,8 @@
 
 #define BENCHMARK_LEN 1000000
 
+int run_tests();
+
 double get_time() {
     struct timespec ts;
     clock_gettime(CLOCK_MONOTONIC, &ts);
@@ -20,6 +22,7 @@ void generate_random_string(char *str, size_t len) {
 }
 
 int main() {
+    run_tests();
     printf("Edit Distance Benchmark Test\n");
     
     srand(time(NULL));
