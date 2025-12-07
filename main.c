@@ -44,7 +44,6 @@ int main() {
     printf("String length: %d\n", BENCHMARK_LEN);
     printf("Edit distance: %d\n", distance);
     printf("Execution time: %.3f seconds\n", elapsed);
-    printf("Cells/second: %.2f M\n", (BENCHMARK_LEN * BENCHMARK_LEN / 1e6) / elapsed);
     
     free(str1);
     free(str2);
